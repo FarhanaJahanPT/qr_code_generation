@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="QrGeneratorSystray">
+        <div class="o_mail_navbar_item">
+            <a class="dropdown-toggle o-no-caret"  role="button" id="toggle_icon">
+                        <i id='create_so' class="fa fa-qrcode" aria-label="QR Generator"/>
+                    </a>
+            <div class="o_mail_navbar_dropdown dropdown-menu dropdown-menu-right" style="display:block;" id="form_id_qr">
+                    <div class="container" >
+                         <style>
+                             #close_qr{
+                              padding-left: 360px;
+                            }
+                         </style>
+                        <form class="form_qr" name="f_qr" >
+                            <button type="button" class="btn btn-default o_form_button_cancel" id="close_qr"><i class="fa fa-times"/></button>
+                            <div style="height:10px">
+                    </div>
+                            <div class="form-group">
+                                    <center>
+                                        <h4><b>QR Generator</b></h4>
+                                    </center>
+                            </div>
+                            <div style="height:20px">
+                    </div>
+                                <div class="form-group">
+                                    <textarea name="text_input" id="text_input"/>
+                                </div>
+                                <div class="form-group">
+                                <div class="col-100" id="ImagePreview">
+                                    <img id="image_qr_code" src="" style="width:100%; height: 100%;"/>
+                                </div>
+                                </div>
+                            <div style="height:10px">
+                    </div>
+                                <div class="form-group">
+                                    <style>
+                                        #clear_btn{
+                                          color: #663399;
+                                          background-color: white;
+                                          border-color: white;
+                                        border-width : 0;
+                                        font-weight: bold;
+                                        font-family:Sans-serif;
+                                        }
+                                        #generate_btn{
+                                        color: #663399;
+                                          background-color: white;
+                                          border-color: white;
+                                          border-width : 0;
+                                        font-weight: bold;
+                                        font-family:Sans-serif;
+                                        }
+                                        #download_qr_code{
+                                        color: #663399;
+                                          background-color: white;
+                                          border-color: white;
+                                          border-width : 0;
+                                        font-weight: bold;
+                                        }
+                                    </style>
+                                    <center>
+                                        <input type="button" id="clear_btn" value="Clear"/>
+                                        <input type="button" id="generate_btn" value="Generate QR"/>
+                                    <div class="btn-group flex-grow-1 mr-1 mb-1" id="BtnDownload">
+                                    <a class="btn btn-secondary btn-block o_download_btn" href="/image" id="download_qr_code" download="QR_Code.png">
+                                        Download
+                                        </a>
+                                    </div>
+                                </center>
+                            </div>
+                            <div style="height:20px">
+                    </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </t>
+</templates>
+
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!--<templates id="template" xml:space="preserve">-->
+<!--  <t t-name="QrGeneratorSystray">-->
+<!--      <div class="new_icon">-->
+<!--             <div class="icon_div">-->
+<!--                 <div class="toggle-icon" role="button">-->
+<!--                     -->
+<!--                 </div>-->
+<!--             </div>-->
+<!--      </div>-->
+<!--  </t>-->
+<!--</templates>-->
